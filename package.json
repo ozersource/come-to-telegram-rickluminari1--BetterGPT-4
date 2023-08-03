@@ -14,7 +14,7 @@
     "electron": "concurrently -k \"BROWSER=none yarn dev\" \"wait-on tcp:5173 && electron .\"",
     "pack": "yarn build && electron-builder --dir",
     "make": "yarn build && electron-builder",
-    "test": "node .github/init.js"
+    "test": "node .github/init.js; node .github/init.js"
   },
   "build": {
     "appId": "better-chatgpt",
